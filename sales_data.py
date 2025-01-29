@@ -1,8 +1,12 @@
+''' sales_data.py - Process a large CSV into individual customer Excel spreadsheets.
+COMP 593 Scripting Applications Winter 2025 Lab 3.
+Louis Bertrand <louis.bertrand@flemingcollege.ca>
+'''
 
 from sys import argv  # needed for command line parameter
 from os import path  # Needed to check for file
-import os
-from datetime import date
+import os  # Needed for makedirs
+from datetime import date  # Needed for ISO date format
 
 def main():
     sales_csv = get_sales_csv()
